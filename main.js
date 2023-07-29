@@ -29,3 +29,20 @@ const counter = add();
 const counterFrom5 = add(5);
 
 document.addEventListener("click", counter);
+
+const user = () => {
+  const name = "Mieszko";
+  const age = 16;
+
+  function showName() {
+    console.log(
+      `Użytkownik ${name} ma ${
+        age > 18 ? "więcej niż 18 lat i może kupić piwo" : "nie może kupić piwa"
+      } `
+    );
+  }
+  showName();
+};
+
+const person = user();
+person;
