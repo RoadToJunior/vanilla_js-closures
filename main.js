@@ -50,14 +50,14 @@
 
 //zadanie TIMER
 
-const timer = () => {
+const clock = () => {
   let number = 0;
-  document.body.textContent = `${number} sekund`;
   return () => {
     number++;
     document.body.textContent = `${number} sekund`;
   };
 };
-const clock = timer();
 
-setInterval(clock, 1000);
+const timer = clock();
+
+setInterval(timer, 1000);
